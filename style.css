@@ -1,74 +1,99 @@
-#main{
-
-    text-align: center;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
- color: #eee;
- 
- background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
- 
-}
-#title{
-    color: #eee;
-}
-#description{
-    color: #eee;
-}
-
-#label{
-    color: #eee;
-    float: left;
-    margin-bottom: 15px;
-    width: 100%;
-    margin-left: 35px;
+body{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    color: white;
 }
 #survey-form{
-    background-color: rgba(27,27,50,0.8);
-   margin-left: 25%;
-   margin-right: 25%;
-   text-align: left;
-   padding-bottom: 40px;
-   padding-top: 15px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgba(43, 43, 104,0.7);
+    text-align: center;
    
+}
+
+input{
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+#title{
+    text-align: center;
+    color: white;
+    font-family: monospace , sans-serif;
+}
+#description{
+    text-align: center;
+    font-family: monospace , sans-serif;
+    color: white;
+}
+#select{
+
+    width: 100%;
+   display: block;
+    text-align: left;
+    margin: 10px;
+}
+
+#name , #email , #number{
+    width: 90%; 
+    margin : 10px;
+ 
+
+}
+label{
+    text-align: left;
+    margin : 10px;
+}
+#dropdown-select{
+    text-align: left;
+    margin: 10px;
+  
   
 }
-button{
-    width: 90%;
-    font-size: 20px;
-    color: white;
-    background-color: #37af65;
-    margin-top: 15px;
-    margin-left: 35px;
-}
 
-ul{
-    float: left;
+header{
+    text-align: left;
+    margin : 10px;
+
+}
+button{
+    padding: 10px;
+    background-color: yellowgreen;
+    width: 90%;
+    margin: 40px;
    
-    width: 100%;
-    margin: 0;
-    margin-bottom: 3px;
 }
-p{
-    margin-left: 35px;
-}
-textarea{
-    margin-left: 35px;
-}
-#inputs{
-    margin-right: 35px;
-    margin-left: 35px;
+#radio{
+    margin : 10px;
+
 }
 #dropdown{
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-bottom: 10px;
-    width: 90%;
-}
-#name,#email,#number{
-    width: 100%;
+    width: 90%; 
+    padding: 10px;
+    border-radius: 5px;
 
 }
-input{
-    height: 20px;
+@media screen and (max-width: 600px) {
+  
+    #survey-form{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: rgba(43, 43, 104,0.7);
+        background-repeat: no-repeat;
+        text-align: center;
+       
+    }
+    #description{
+        text-align: center;
+        font-family: monospace , sans-serif;
+        color: black;
+    }
+textarea{
+    
+    display: block;
+    width: 90%;
+}
 }
